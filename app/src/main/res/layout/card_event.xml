@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_event"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <TextView
+            android:id="@+id/author_event"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/published_event"
+            app:layout_constraintEnd_toStartOf="@id/menu_event"
+            app:layout_constraintStart_toEndOf="@id/avatar_event"
+            app:layout_constraintTop_toTopOf="@+id/avatar_event"
+            tools:text="@tools:sample/first_names" />
+
+        <TextView
+            android:id="@+id/published_event"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/avatar_event"
+            app:layout_constraintEnd_toStartOf="@+id/menu_event"
+            app:layout_constraintStart_toEndOf="@+id/avatar_event"
+            app:layout_constraintTop_toBottomOf="@id/author_event"
+            tools:text="@tools:sample/date/ddmmyy" />
+
+        <ImageView
+            android:id="@+id/avatar_event"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/ic_baseline_account_box_24" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/menu_event"
+            style="@style/Widget.App.MenuCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:checkable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier_upper_menu_card_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:barrierMargin="16dp"
+            app:constraint_referenced_ids="avatar_event, published_event" />
+
+
+        <TextView
+            android:id="@+id/content_event"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:autoLink="web"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/image_event"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/barrier_upper_menu_card_event"
+            tools:text="@tools:sample/lorem[50]" />
+
+        <ImageView
+            android:id="@+id/image_event"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/description"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/content_event"
+            tools:layout_height="100dp"
+            tools:layout_width="100dp"
+            tools:srcCompat="@drawable/ic_photo_24dp"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/text_view_datetime_text_card_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/event_date"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@id/barrier_downer_menu_card_event"
+            app:layout_constraintStart_toStartOf="@+id/content_event"
+            app:layout_constraintTop_toBottomOf="@id/image_event" />
+
+        <TextView
+            android:id="@+id/datetime_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/text_view_datetime_text_card_event"
+            app:layout_constraintStart_toEndOf="@+id/text_view_datetime_text_card_event"
+            tools:text="@tools:sample/date/ddmmyy" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/speakers_sum_event"
+            style="@style/Widget.AppTheme.SpeakersSumCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:checked="false"
+            app:layout_constraintBottom_toBottomOf="@+id/location_event"
+            app:layout_constraintEnd_toStartOf="@+id/location_event"
+            app:layout_constraintTop_toTopOf="@id/location_event" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/location_event"
+            style="@style/Widget.App.Location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:checkable="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/datetime_event"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/datetime_event" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier_downer_menu_card_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:barrierMargin="8dp"
+            app:constraint_referenced_ids="
+            content_event,
+            image_event,
+            datetime_event" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/content_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:dividerColor="@color/green"
+            app:dividerInsetEnd="8dp"
+            app:dividerInsetStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/barrier_downer_menu_card_event"
+            tools:ignore="NotSibling" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/likes_sum_event"
+            style="@style/Widget.AppTheme.LikeSumCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:checked="false"
+            app:layout_constraintEnd_toStartOf="@+id/speakers_sum_event"
+            app:layout_constraintTop_toTopOf="@id/speakers_sum_event"
+            app:layout_constraintBottom_toBottomOf="@id/speakers_sum_event" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_like_card_event"
+            style="@style/Widget.AppTheme.LikeCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:checkable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/likes_sum_event" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/participants_sum_event"
+            style="@style/Widget.AppTheme.ParticipantsSumCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="4dp"
+            android:checked="false"
+            app:layout_constraintEnd_toStartOf="@+id/likes_sum_event"
+            app:layout_constraintTop_toTopOf="@id/likes_sum_event"
+            app:layout_constraintBottom_toBottomOf="@id/likes_sum_event" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/participate_event"
+            style="@style/Widget.AppTheme.ParticipateCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:checkable="true"
+            app:layout_constraintBottom_toBottomOf="@id/button_like_card_event"
+            app:layout_constraintStart_toEndOf="@+id/button_like_card_event"
+            app:layout_constraintTop_toTopOf="@+id/button_like_card_event" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_share_card_event"
+            style="@style/Widget.AppTheme.ShareCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:checkable="true"
+            android:contentDescription="@string/description"
+            app:layout_constraintBottom_toBottomOf="@id/button_like_card_event"
+            app:layout_constraintStart_toEndOf="@+id/participate_event"
+            app:layout_constraintTop_toTopOf="@+id/button_like_card_event" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_spacing_small">8dp</dimen>
+    <dimen name="icon_button_min_size">24dp</dimen>
+    <dimen name="common_spacing">18dp</dimen>
+    <dimen name="small_spacing">12dp</dimen>
+    <dimen name="icon_button_padding">12dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_margin_top">48dp</dimen>
+</resources>

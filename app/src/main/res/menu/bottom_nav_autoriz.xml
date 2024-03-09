@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/unAuthorized"
+        android:visible="false">
+        <item
+            android:id="@+id/signIn"
+            android:title="@string/sign_in"
+            android:icon="@drawable/baseline_account_circle_24"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/signUp"
+            android:title="@string/sign_up"
+            android:icon="@drawable/baseline_border_inner_24"
+            app:showAsAction="ifRoom" />
+    </group>
+
+    <group android:id="@+id/authorized"
+        android:visible="false">
+
+        <item android:id="@+id/logout"
+            android:title="@string/sign_out"
+            android:icon="@android:drawable/ic_menu_set_as"
+            app:showAsAction="ifRoom"/>
+    </group>
+</menu>

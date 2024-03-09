@@ -1,0 +1,109 @@
+<resources>
+    <string name="Authorization">Authorization required to continue!</string>
+    <string name="AuthorizationMes">Please go through the authorization procedure!</string>
+    <string name="app_name" translatable="true">NeWork</string>
+    <string name="post_remove">Remove</string>
+    <string name="edit" translatable="true">Edit</string>
+    <string name="shared" translatable="true">Share</string>
+    <string name="options" translatable="true">Menu</string>
+    <string name="error_empty_content">Content is empty</string>
+    <string name="post_text" translatable="true">Введите текст</string>
+    <string name="text">Текст</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>>
+    <string name="channel_remote_name">Server notifications</string>
+    <string name="channel_remote_description">Notifications from remote server</string>
+    <string name="notification_user_liked">%1$s liked %2$s\'s post</string>
+    <string name="notification_user_liked_event">%1$s liked %2$s\'s event</string>
+    <string name="notification_new_post">%1$s published new post</string>
+    <string name="notification_new_event">%1$s published new event</string>
+    <string name="no_post" translatable="true">" It's empty here. You can add the first post"</string>
+    <string name="error_loading">ERROR</string>
+    <string name="retry_loading">RETRY</string>
+    <string name="post_empty">POST EMPTY</string>
+    <string name="todo">TODO</string>
+    <string name="input_video_link_here">Input video link here</string>
+    <string name="post_input_text">Input text</string>
+    <string name="NewPost" translatable="true">New Posts</string>
+    <string name="menu_save">Save</string>
+    <string name="description_select_photo">Select photo</string>
+    <string name="description_take_photo">Take photo</string>
+    <string name="description_photo">Photo</string>
+    <string name="remove">Remove</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="register">Register</string>
+    <string name="Later">Later</string>
+    <string name="warningAuth">Please login to use all features.</string>
+    <string name="Code1">Response information code</string>
+    <string name="Code2">Redirect</string>
+    <string name="errorCode1">Client Error</string>
+    <string name="errorCode2">Server error</string>
+    <string name="dialogTitle">Notification</string>
+    <string name="dialogMes">Do you confirm logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="errorGoogle">Google Api Unavailable</string>
+    <string name="errorLogPass">Wrong login or password</string>
+    <string name="errorPol">Please complete all fields to continue</string>
+    <string name="errorPassword">Passwords do not match!</string>
+    <string name="maps">Maps</string>
+    <string name="job">Job</string>
+    <string name="posts">Posts</string>
+    <string name="users">Users</string>
+    <string name="events">Events</string>
+    <string name="post">Post</string>
+    <string name="user">User</string>
+    <string name="event">Event</string>
+    <string name="participate">Participate</string>
+    <string name="large_text">" Large text!"</string>
+    <string name="description">description</string>
+    <string name="empty">Empty</string>
+    <string name="text_place">Company:</string>
+    <string name="text_position">Position</string>
+    <string name="text_job_title">Job title:</string>
+    <string name="link">Link:</string>
+    <string name="to_job">to:</string>
+    <string name="from">from:</string>
+    <string name="profile">My profile</string>
+    <string name="don_t_have_an_account_yet">Don\'t have an account yet?</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="event_date">Event date</string>
+    <string name="finish">Job now</string>
+    <string name="retry">Retry</string>
+    <string name="create_a_job">Create a job</string>
+    <string name="create_a_event">Create a event</string>
+    <string name="create_a_post">Create a post</string>
+    <string name="nobody_liked_it">Nobody liked it</string>
+    <string name="no_participants">No Participants</string>
+    <string name="no_access_location">No access to location!</string>
+    <string name="map">Maps</string>
+    <string name="new_event">New event</string>
+    <string name="new_job">New job</string>
+    <string name="change_or_clear">Change or clear</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="add_speakers">Speakers +</string>
+    <string name="new_post">New post</string>
+    <string name="no_likes">No likes</string>
+    <string name="no_mentions">No mentions</string>
+    <string name="no_play">No play</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="mention">Mention</string>
+    <string name="clear">Clear</string>
+    <string name="multiple_observers">Multiple observers!</string>
+    <string name="search">Search</string>
+    <string name="send_text">Send text</string>
+    <string name="no_photo">The user does not have an avatar loaded</string>
+    <string name="no_speakers">Oops...No speakers</string>
+    <string name="msg_token_fmt">token</string>
+
+
+</resources>
+

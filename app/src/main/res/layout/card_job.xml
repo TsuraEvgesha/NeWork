@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_job"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/menu_job"
+            style="@style/Widget.App.MenuCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:checkable="true"
+            app:layout_constraintBottom_toBottomOf="@+id/name_job"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/name_job"/>
+
+        <TextView
+            android:id="@+id/name_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_place"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_name_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/name_job"
+            app:layout_constraintStart_toEndOf="@+id/name_job"
+            tools:text="MBU CBS" />
+
+        <TextView
+            android:id="@+id/job_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_job_title"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/name_job"
+            app:layout_constraintTop_toBottomOf="@id/name_job" />
+
+        <TextView
+            android:id="@+id/text_job_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/job_title"
+            app:layout_constraintStart_toStartOf="@id/text_name_job"
+            app:layout_constraintStart_toEndOf="@+id/job_title"
+            tools:text="Librarian" />
+
+        <TextView
+            android:id="@+id/from_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/from"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/name_job"
+            app:layout_constraintTop_toBottomOf="@id/text_job_title" />
+
+        <TextView
+            android:id="@+id/text_from_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/from_job"
+            app:layout_constraintStart_toStartOf="@id/text_job_title"
+            app:layout_constraintStart_toEndOf="@+id/from_job"
+            tools:text="2019-11" />
+
+        <TextView
+            android:id="@+id/to_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/to_job"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/name_job"
+            app:layout_constraintTop_toBottomOf="@id/text_from_job" />
+
+        <TextView
+            android:id="@+id/text_to_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/to_job"
+            app:layout_constraintStart_toStartOf="@id/text_from_job"
+            app:layout_constraintStart_toEndOf="@+id/to_job"
+            tools:text="2024-02" />
+
+        <TextView
+            android:id="@+id/link_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/link"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/name_job"
+            app:layout_constraintTop_toBottomOf="@id/text_to_job" />
+
+        <TextView
+            android:id="@+id/text_link_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            app:layout_constraintBaseline_toBaselineOf="@+id/link_job"
+            app:layout_constraintStart_toStartOf="@id/text_to_job"
+            app:layout_constraintStart_toEndOf="@+id/link_job"
+            tools:text="https://mbucbs.ru" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

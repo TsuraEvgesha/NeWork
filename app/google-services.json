@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "978146079003",
+    "project_id": "nework-7c431",
+    "storage_bucket": "nework-7c431.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978146079003:android:8723fcdd877fd46036a3be",
+        "android_client_info": {
+          "package_name": "ru.netology.nework"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtPuUeEou4uT5b9zwUMzzhJOrcYoJH_T4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
